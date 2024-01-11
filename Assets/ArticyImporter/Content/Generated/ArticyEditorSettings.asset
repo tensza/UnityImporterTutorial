@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 704907223, guid: 538242286e35fb84f8e90dd86ba08b80, type: 3}
+  m_Name: ArticyEditorSettings
+  m_EditorClassIdentifier: 
+  mIsImporting: 0
+  mAwaitingModelImport: 0
+  mAwaitingFragmentsImport: 0
+  mLastUsedObjectDefinitionHash: 66D4885CEFC2994046BABDCA0D856F00992BE6836081E0ADB187232494889520
+  mLastUsedScriptFragmentsHash: 1990543101
+  mLastUsedPackagesHash: 282370559
+  mLastUsedPackagesCount: 1
+  mLastBuildCode: 1
+  mLastEditorStartupTimeTicks: 638405884661380650
+  mNewVersionAvailable: 0
+  mLastSelectedCustomGvPath: 
+  mLastAttachedFlowPlayerValue: 0
