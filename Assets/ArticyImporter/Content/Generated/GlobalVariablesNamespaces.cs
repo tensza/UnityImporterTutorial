@@ -26,8 +26,8 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         [SerializeField()]
         private BaseGlobalVariables _VariableStorage;
         
-        // Player received a tip about what to ask the Oracle
-        public bool gotTip
+        // Gracz otrzymal podpowiedz na temat NPC2
+        public bool mamPodpowiedz
         {
             get
             {
@@ -39,8 +39,8 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
             }
         }
         
-        // Player talked to Kirian before
-        public bool dialogue1Visited
+        // Gracz rozmawial z pierwszym NPC
+        public bool odpalonoDialog1
         {
             get
             {
@@ -52,8 +52,8 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
             }
         }
         
-        // Player talked to the Oracle before
-        public bool dialogue2Visited
+        // Gracz rozmawial z drugim NPC
+        public bool odpalonoDialog2
         {
             get
             {
@@ -65,12 +65,54 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
             }
         }
         
+        // Gdy wszystkie warunki testowe zostaly spelnione
+        public bool testKoniec
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(3);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(3, value);
+            }
+        }
+        
+        // 
+        public bool odpalonoD11
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(4);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(4, value);
+            }
+        }
+        
+        // 
+        public bool odpalonoD12
+        {
+            get
+            {
+                return _VariableStorage.Internal_GetVariableValueBoolean(5);
+            }
+            set
+            {
+                _VariableStorage.Internal_SetVariableValueBoolean(5, value);
+            }
+        }
+        
         public void RegisterVariables(BaseGlobalVariables aStorage)
         {
             _VariableStorage = aStorage;
-            aStorage.RegisterVariable("GameState.gotTip", false);
-            aStorage.RegisterVariable("GameState.dialogue1Visited", false);
-            aStorage.RegisterVariable("GameState.dialogue2Visited", false);
+            aStorage.RegisterVariable("GameState.mamPodpowiedz", false);
+            aStorage.RegisterVariable("GameState.odpalonoDialog1", false);
+            aStorage.RegisterVariable("GameState.odpalonoDialog2", false);
+            aStorage.RegisterVariable("GameState.testKoniec", false);
+            aStorage.RegisterVariable("GameState.odpalonoD11", false);
+            aStorage.RegisterVariable("GameState.odpalonoD12", false);
         }
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Articy.Unity;
+using Articy.UnityImporterTutorial.GlobalVariables;
 
 
 public class PlayerController : MonoBehaviour
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour
     // Simple scene restart for testing purposes
     void RestartScene()
     {
+        ArticyGlobalVariables.Default.ResetVariables();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

@@ -1,97 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4976526998147897220
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d242f8b8d3c06814d88822da7389b79f, type: 3}
-  m_Name: ArticyScriptFragments
-  m_EditorClassIdentifier: 
---- !u!114 &-1809234458180225358
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: LocalizationManager
-  m_EditorClassIdentifier: 
-  OnLanguageChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  mUseLocalization: 0
-  mLanguage: en
-  mThrowOnMissingText: 0
-  mClearOnLanguageSwitch: 1
-  mExportLanguage: en
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
-  m_Name: ArticyDatabase
-  m_EditorClassIdentifier: 
-  mHierarchy: {fileID: 5178224520123675336}
-  mLocalization: {fileID: -1809234458180225358}
-  mInternalProject:
-    mName: Unity Importer Tutorial
-    mDetailName: articy:draft Importer for Unity tutorial series
-    mId: 5073f84d-fd65-40fa-8eca-f3f80ed30882
-    mTechnicalName: UnityImporterTutorial
-  mImportedAssets:
-  - Assets/Images/ava_guinevere_01
-  - Assets/Images/ava_sitlancelot_01
-  - Assets/Images/Class_Template_Entity_MainCharacter_256
-  mDefaultGlobalVariables: {fileID: 4638343663716319915}
-  mScriptFragments: {fileID: -4976526998147897220}
-  mPackages:
-  - PackageName: All objects
-    PackagePath: All objects
-    mIsDefaultPackage: 1
---- !u!114 &4638343663716319915
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0317c349cb558134287f3f8df0c69062, type: 3}
-  m_Name: DefaultGlobalVariables
-  m_EditorClassIdentifier: 
-  BoolVariableCache:
-  - mFullQualifiedName: GameState.gotTip
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.dialogue1Visited
-    mVar:
-      values: 00
-  - mFullQualifiedName: GameState.dialogue2Visited
-    mVar:
-      values: 00
-  IntVariableCache: []
-  StringVariableCache: []
-  LiveBoolVariableCache: []
-  LiveIntVariableCache: []
-  LiveStringVariableCache: []
-  isInitialized: 1
-  mGameState:
-    _VariableStorage: {fileID: 4638343663716319915}
---- !u!114 &5178224520123675336
+--- !u!114 &-8355564318579091601
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,37 +57,12 @@ MonoBehaviour:
     parent: 72057594037927937
     technicalName: Flow
     articyType: Flow
-    childCount: 6
-  - id: 72057594037928238
-    parent: 216172783251375095
-    technicalName: 
-    articyType: Comment
-    childCount: 0
-  - id: 72057594037928240
-    parent: 216172783251375095
-    technicalName: 
-    articyType: Comment
-    childCount: 0
-  - id: 72057594037928730
-    parent: 216172783251375095
-    technicalName: 
-    articyType: Comment
-    childCount: 0
+    childCount: 2
   - id: 72057594037928724
     parent: 216172783251375095
     technicalName: FFr_F5EA4EA6
     articyType: FlowFragment
-    childCount: 4
-  - id: 72057594037928643
-    parent: 72057594037928724
-    technicalName: 
-    articyType: Comment
-    childCount: 0
-  - id: 72057594037928738
-    parent: 72057594037928724
-    technicalName: 
-    articyType: Comment
-    childCount: 0
+    childCount: 2
   - id: 72057594037928637
     parent: 72057594037928724
     technicalName: Dlg_19BF0109
@@ -254,11 +138,16 @@ MonoBehaviour:
     technicalName: DFr_5CD4C92B
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928219
+  - id: 72057594037928876
     parent: 216172783251375095
+    technicalName: FFr_996E56DA
+    articyType: FlowFragment
+    childCount: 3
+  - id: 72057594037928219
+    parent: 72057594037928876
     technicalName: Dlg_8C6B33D0
     articyType: Dialogue
-    childCount: 25
+    childCount: 17
   - id: 72057594037928251
     parent: 72057594037928219
     technicalName: DFr_051B7DD2
@@ -269,14 +158,14 @@ MonoBehaviour:
     technicalName: DFr_734FEB33
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928258
-    parent: 72057594037928219
-    technicalName: DFr_036E6EA6
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037928290
     parent: 72057594037928219
     technicalName: DFr_937E84CD
+    articyType: DialogueFragment
+    childCount: 0
+  - id: 72057594037928847
+    parent: 72057594037928219
+    technicalName: DFr_62F0DE5B
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928283
@@ -329,46 +218,6 @@ MonoBehaviour:
     technicalName: DFr_9D6B9F47
     articyType: DialogueFragment
     childCount: 0
-  - id: 72057594037928366
-    parent: 72057594037928219
-    technicalName: DFr_671CD267
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928409
-    parent: 72057594037928219
-    technicalName: DFr_153D469C
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928379
-    parent: 72057594037928219
-    technicalName: DFr_73753FEE
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928416
-    parent: 72057594037928219
-    technicalName: DFr_85676098
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928386
-    parent: 72057594037928219
-    technicalName: DFr_3E0251B9
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928423
-    parent: 72057594037928219
-    technicalName: DFr_B089ADB5
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928393
-    parent: 72057594037928219
-    technicalName: DFr_C2C050D6
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928430
-    parent: 72057594037928219
-    technicalName: DFr_D85A5126
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037928437
     parent: 72057594037928219
     technicalName: DFr_D58D3529
@@ -385,10 +234,10 @@ MonoBehaviour:
     articyType: Jump
     childCount: 0
   - id: 72057594037928225
-    parent: 216172783251375095
+    parent: 72057594037928876
     technicalName: Dlg_80270600
     articyType: Dialogue
-    childCount: 25
+    childCount: 22
   - id: 72057594037928445
     parent: 72057594037928225
     technicalName: DFr_0ADD76DD
@@ -412,16 +261,6 @@ MonoBehaviour:
   - id: 72057594037928472
     parent: 72057594037928225
     technicalName: DFr_40F502D3
-    articyType: DialogueFragment
-    childCount: 0
-  - id: 72057594037928562
-    parent: 72057594037928225
-    technicalName: Jmp_F2E7FD71
-    articyType: Jump
-    childCount: 0
-  - id: 72057594037928502
-    parent: 72057594037928225
-    technicalName: DFr_239E650A
     articyType: DialogueFragment
     childCount: 0
   - id: 72057594037928511
@@ -499,11 +338,6 @@ MonoBehaviour:
     technicalName: Jmp_83A87C4F
     articyType: Jump
     childCount: 0
-  - id: 72057594037928669
-    parent: 72057594037928225
-    technicalName: DFr_2F96A000
-    articyType: DialogueFragment
-    childCount: 0
   - id: 72057594037928614
     parent: 72057594037928225
     technicalName: DFr_426B8005
@@ -514,11 +348,31 @@ MonoBehaviour:
     technicalName: DFr_98AA31D9
     articyType: DialogueFragment
     childCount: 0
+  - id: 72057594037928855
+    parent: 72057594037928876
+    technicalName: Dlg_FEBA9F52
+    articyType: Dialogue
+    childCount: 1
+  - id: 72057594037928863
+    parent: 72057594037928855
+    technicalName: DFr_8AF3089C
+    articyType: DialogueFragment
+    childCount: 0
   - id: 216172785005863603
     parent: 72057594037927937
     technicalName: Entities
     articyType: Entities
-    childCount: 3
+    childCount: 5
+  - id: 72057594037928207
+    parent: 216172785005863603
+    technicalName: Ntt_65BA230A
+    articyType: Entity
+    childCount: 0
+  - id: 72057594037928871
+    parent: 216172785005863603
+    technicalName: Ntt_4B8D69B2
+    articyType: Entity
+    childCount: 0
   - id: 72057594037928215
     parent: 216172785005863603
     technicalName: Ntt_C01E8510
@@ -529,9 +383,9 @@ MonoBehaviour:
     technicalName: Ntt_B1F02A9D
     articyType: Entity
     childCount: 0
-  - id: 72057594037928207
+  - id: 72057594037928839
     parent: 216172785005863603
-    technicalName: Ntt_65BA230A
+    technicalName: Ntt_FA265AE8
     articyType: Entity
     childCount: 0
   - id: 216172782940115884
@@ -743,20 +597,30 @@ MonoBehaviour:
     parent: 216172783392894804
     technicalName: Ufo_126E1374
     articyType: AssetsUserFolder
-    childCount: 3
-  - id: 72057594037928242
-    parent: 72057594037928197
-    technicalName: Ast_C2F4992D
-    articyType: Asset
-    childCount: 0
-  - id: 72057594037928245
-    parent: 72057594037928197
-    technicalName: Ast_EA0AE647
-    articyType: Asset
-    childCount: 0
+    childCount: 5
   - id: 72057594037928248
     parent: 72057594037928197
     technicalName: Ast_8ADE173A
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037928830
+    parent: 72057594037928197
+    technicalName: Ast_6251A101
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037928833
+    parent: 72057594037928197
+    technicalName: Ast_08EBDAF3
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037928843
+    parent: 72057594037928197
+    technicalName: Ast_7398F81E
+    articyType: Asset
+    childCount: 0
+  - id: 72057594037928836
+    parent: 72057594037928197
+    technicalName: Ast_FA9D627D
     articyType: Asset
     childCount: 0
   - id: 72057594037928205
@@ -769,3 +633,105 @@ MonoBehaviour:
     technicalName: Ufo_8B9CAC75
     articyType: AssetsUserFolder
     childCount: 0
+--- !u!114 &-7625638735797811058
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d242f8b8d3c06814d88822da7389b79f, type: 3}
+  m_Name: ArticyScriptFragments
+  m_EditorClassIdentifier: 
+--- !u!114 &-1809234458180225358
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1174674681, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: LocalizationManager
+  m_EditorClassIdentifier: 
+  OnLanguageChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  mUseLocalization: 0
+  mLanguage: en
+  mThrowOnMissingText: 0
+  mClearOnLanguageSwitch: 1
+  mExportLanguage: en
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1676762633, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyDatabase
+  m_EditorClassIdentifier: 
+  mHierarchy: {fileID: -8355564318579091601}
+  mLocalization: {fileID: -1809234458180225358}
+  mInternalProject:
+    mName: Unity Importer Tutorial
+    mDetailName: articy:draft Importer tutorial for Unity Engine
+    mId: 5073f84d-fd65-40fa-8eca-f3f80ed30882
+    mTechnicalName: UnityImporterTutorial
+  mImportedAssets:
+  - Assets/Images/AvatarGracz
+  - Assets/Images/npc1
+  - Assets/Images/npc2
+  - Assets/Images/TutorialLocation
+  - Assets/Images/pig
+  mDefaultGlobalVariables: {fileID: 1307755839219864241}
+  mScriptFragments: {fileID: -7625638735797811058}
+  mPackages:
+  - PackageName: All objects
+    PackagePath: All objects
+    mIsDefaultPackage: 1
+--- !u!114 &1307755839219864241
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0317c349cb558134287f3f8df0c69062, type: 3}
+  m_Name: DefaultGlobalVariables
+  m_EditorClassIdentifier: 
+  BoolVariableCache:
+  - mFullQualifiedName: GameState.mamPodpowiedz
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.odpalonoDialog1
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.odpalonoDialog2
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.testKoniec
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.odpalonoD11
+    mVar:
+      values: 00
+  - mFullQualifiedName: GameState.odpalonoD12
+    mVar:
+      values: 00
+  IntVariableCache: []
+  StringVariableCache: []
+  LiveBoolVariableCache: []
+  LiveIntVariableCache: []
+  LiveStringVariableCache: []
+  isInitialized: 1
+  mGameState:
+    _VariableStorage: {fileID: 1307755839219864241}

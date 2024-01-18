@@ -20,7 +20,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
 {
     
     
-    [Articy.Unity.ArticyCodeGenerationHashAttribute(638405176189401042)]
+    [Articy.Unity.ArticyCodeGenerationHashAttribute(638411944607029140)]
     public class ArticyScriptFragments : BaseScriptFragments, ISerializationCallbackReceiver
     {
         
@@ -37,7 +37,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public bool Script_0x10000000000013EText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return !aGlobalVariablesState.GameState.dialogue1Visited;
+            return !aGlobalVariablesState.GameState.odpalonoDialog1;
         }
         
         /// <summary>
@@ -46,7 +46,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public bool Script_0x100000000000150Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return aGlobalVariablesState.GameState.dialogue1Visited;
+            return aGlobalVariablesState.GameState.odpalonoDialog1;
         }
         
         /// <summary>
@@ -55,7 +55,35 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public void Script_0x100000000000170Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            aGlobalVariablesState.GameState.dialogue1Visited = true;;
+            aGlobalVariablesState.GameState.odpalonoDialog1 = true;;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x10000000000017E
+        /// Articy Object ref: articy://localhost/view/5073f84d-fd65-40fa-8eca-f3f80ed30882/72057594037928318?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x10000000000017EText(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.odpalonoD11=true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000184
+        /// Articy Object ref: articy://localhost/view/5073f84d-fd65-40fa-8eca-f3f80ed30882/72057594037928324?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000184Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.odpalonoD12=true;
+        }
+        
+        /// <summary>
+        /// ObjectID: 0x100000000000197
+        /// Articy Object ref: articy://localhost/view/5073f84d-fd65-40fa-8eca-f3f80ed30882/72057594037928343?pane=selected&amp;tab=current
+        /// </summary>
+        public void Script_0x100000000000197Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
+        {
+            aGlobalVariablesState.GameState.testKoniec = true;
+;
         }
         
         /// <summary>
@@ -64,7 +92,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public void Script_0x1000000000001F9Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            aGlobalVariablesState.GameState.gotTip = true;
+            aGlobalVariablesState.GameState.mamPodpowiedz = true;
         }
         
         /// <summary>
@@ -73,7 +101,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public bool Script_0x100000000000200Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return !aGlobalVariablesState.GameState.dialogue2Visited;
+            return !aGlobalVariablesState.GameState.odpalonoDialog2;
         }
         
         /// <summary>
@@ -82,7 +110,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public bool Script_0x100000000000207Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return aGlobalVariablesState.GameState.dialogue2Visited;
+            return aGlobalVariablesState.GameState.odpalonoDialog2;
         }
         
         /// <summary>
@@ -91,7 +119,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public void Script_0x100000000000268Text(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            aGlobalVariablesState.GameState.dialogue2Visited = true;
+            aGlobalVariablesState.GameState.odpalonoDialog2 = true;
         }
         
         /// <summary>
@@ -100,7 +128,7 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         /// </summary>
         public bool Script_0x10000000000029FExpression(ArticyGlobalVariables aGlobalVariablesState, Articy.Unity.IBaseScriptMethodProvider aMethodProvider)
         {
-            return aGlobalVariablesState.GameState.gotTip == true;
+            return aGlobalVariablesState.GameState.mamPodpowiedz == true;
         }
         #endregion
         
@@ -116,11 +144,14 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
             Conditions.Add(1u, this.Script_0x10000000000013EText);
             Conditions.Add(2u, this.Script_0x100000000000150Text);
             Instructions.Add(3u, this.Script_0x100000000000170Text);
-            Instructions.Add(4u, this.Script_0x1000000000001F9Text);
-            Conditions.Add(5u, this.Script_0x100000000000200Text);
-            Conditions.Add(6u, this.Script_0x100000000000207Text);
-            Instructions.Add(7u, this.Script_0x100000000000268Text);
-            Conditions.Add(8u, this.Script_0x10000000000029FExpression);
+            Instructions.Add(4u, this.Script_0x10000000000017EText);
+            Instructions.Add(5u, this.Script_0x100000000000184Text);
+            Instructions.Add(6u, this.Script_0x100000000000197Text);
+            Instructions.Add(7u, this.Script_0x1000000000001F9Text);
+            Conditions.Add(8u, this.Script_0x100000000000200Text);
+            Conditions.Add(9u, this.Script_0x100000000000207Text);
+            Instructions.Add(10u, this.Script_0x100000000000268Text);
+            Conditions.Add(11u, this.Script_0x10000000000029FExpression);
         }
         #endregion
         

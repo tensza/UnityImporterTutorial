@@ -19,11 +19,14 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     // Reference to speaker
     [SerializeField]
     Text dialogueSpeaker;
-    //dialogue button
+    //branching layout
     [SerializeField]
-    Button dialogueButton;
+    RectTransform branchLayoutPanel;
     [SerializeField]
-    Button endDialogueButton;
+    GameObject branchPrefab;
+    [SerializeField]
+    GameObject closePrefab;
+
 
     // To check if we are currently showing the dialog ui interface
     public bool DialogueActive { get; set; }
@@ -33,13 +36,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     void Start()
     {
         flowPlayer = GetComponent<ArticyFlowPlayer>();
-        dialogueButton.onClick.AddListener(ContinueDialogue);
-        endDialogueButton.onClick.AddListener(CloseDialogueBox);
-    }
 
-    private void ContinueDialogue()
-    {
-        flowPlayer.Play();
     }
 
     public void StartDialogue(IArticyObject aObject)
@@ -47,7 +44,6 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         DialogueActive = true;
         dialogueWidget.SetActive(DialogueActive);
         flowPlayer.StartOn = aObject;
-        dialogueButton.gameObject.SetActive(true);
 
     }
 
@@ -56,7 +52,6 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         DialogueActive = false;
         dialogueWidget.SetActive(DialogueActive);
         //dialogueButton.gameObject.SetActive(true);
-        endDialogueButton.gameObject.SetActive(DialogueActive);
         flowPlayer.FinishCurrentPausedObject();
     }
 
@@ -84,6 +79,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void OnBranchesUpdated(IList<Branch> aBranches)
     {
+        ClearAllBranches();
         bool dialogueIsFinished = true;
         foreach (Branch branch in aBranches)
         {
@@ -94,10 +90,27 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             }
         }
 
-        if (dialogueIsFinished)
+        if (!dialogueIsFinished)
         {
-            dialogueButton.gameObject.SetActive(false);
-            endDialogueButton.gameObject.SetActive(true);
+            foreach (Branch branch in aBranches)
+            {
+                GameObject btn = Instantiate(branchPrefab, branchLayoutPanel);
+                btn.GetComponent<BranchChoice>().AssignBranch(flowPlayer, branch);
+            }
+        }
+        else
+        {
+            GameObject btn = Instantiate(closePrefab, branchLayoutPanel);
+            var btnComp = btn.GetComponent<Button>();
+            btnComp.onClick.AddListener(CloseDialogueBox);
+        }
+    }
+
+    void ClearAllBranches()
+    {
+        foreach(Transform child in branchLayoutPanel)
+        {
+            Destroy(child.gameObject);
         }
     }
 }

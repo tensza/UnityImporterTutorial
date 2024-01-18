@@ -31,9 +31,12 @@ namespace Articy.UnityImporterTutorial.GlobalVariables
         #region Initialize static VariableName set
         static ArticyGlobalVariables()
         {
-            variableNames.Add("GameState.gotTip");
-            variableNames.Add("GameState.dialogue1Visited");
-            variableNames.Add("GameState.dialogue2Visited");
+            variableNames.Add("GameState.mamPodpowiedz");
+            variableNames.Add("GameState.odpalonoDialog1");
+            variableNames.Add("GameState.odpalonoDialog2");
+            variableNames.Add("GameState.testKoniec");
+            variableNames.Add("GameState.odpalonoD11");
+            variableNames.Add("GameState.odpalonoD12");
         }
         #endregion
         

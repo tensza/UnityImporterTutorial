@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mUsedImportFile: Assets/Unity Importer Tutorial.articyu3d
   mUsedLocalizationPath: 
-  mSCMIgnoreState: 0
+  mSCMIgnoreState: 1
   mShowObjectsInDatabaseView: 1
   mLastPluginVersion: 2.5.3.41372
   mAutomaticallyTriggerImport: 1
